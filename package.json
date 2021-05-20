@@ -1,39 +1,8 @@
 {
-  "_from": "bulma-start@0.0.4",
-  "_id": "bulma-start@0.0.4",
-  "_inBundle": false,
-  "_integrity": "sha512-/PbhZBs1tIqnU75eh1SVWKC2DeW+xtQaaKITRksvmlCSTp8BH88JJk+gML3XCGE2LhSWyHTT+AIh6mwtUyjlxQ==",
-  "_location": "/bulma-start",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "bulma-start@0.0.4",
-    "name": "bulma-start",
-    "escapedName": "bulma-start",
-    "rawSpec": "0.0.4",
-    "saveSpec": null,
-    "fetchSpec": "0.0.4"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/bulma-start/-/bulma-start-0.0.4.tgz",
-  "_shasum": "19a0783cd8f55d8f5b3d771c984ab56f72e75cb7",
-  "_spec": "bulma-start@0.0.4",
-  "_where": "/Users/jthomas/Desktop",
-  "author": {
-    "name": "Jeremy Thomas",
-    "email": "bbxdesign@gmail.com",
-    "url": "http://jgthms.com"
-  },
-  "bugs": {
-    "url": "https://github.com/jgthms/bulma-start/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
+  "license": "MIT",
+  "name": "bulma-start",
   "description": "Start package for Bulma",
+  "version": "1.0.0",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "babel-cli": "^6.26.0",
@@ -44,19 +13,6 @@
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^7.1.0"
   },
-  "homepage": "https://github.com/jgthms/bulma-start#readme",
-  "keywords": [
-    "sass",
-    "bulma",
-    "css",
-    "start"
-  ],
-  "license": "MIT",
-  "name": "bulma-start",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jgthms/bulma-start.git"
-  },
   "scripts": {
     "css-build": "node-sass _sass/main.scss css/main.css",
     "css-deploy": "npm run css-build && npm run css-postcss",
@@ -66,6 +22,5 @@
     "js-build": "babel _javascript --out-dir lib",
     "js-watch": "npm run js-build -- --watch",
     "start": "npm-run-all --parallel css-watch js-watch"
-  },
-  "version": "0.0.4"
+  }
 }
